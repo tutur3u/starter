@@ -12,7 +12,8 @@ CI checks.
 - `@tuturuuu/ui`
 - `tuturuuu` SDK and CLI binaries
 - `@tuturuuu/typescript-config/nextjs.json`
-- ESLint 10, TypeScript 6, and Prettier
+- Biome 2 for linting and formatting
+- TypeScript 7's native compiler through `@typescript/native-preview`
 
 ## Getting Started
 
@@ -63,11 +64,16 @@ bunx tutur3u --version --no-update-check
 ```bash
 bun run dev
 bun run build
+bun run check
 bun run lint
 bun run type-check
 bun run format
 bun run format:check
 ```
+
+`bun run type-check` runs `tsgo --noEmit`. Next.js 16.2 detects the native
+TypeScript package during builds, while CI keeps type checking as an explicit
+step alongside Biome.
 
 ## CI
 

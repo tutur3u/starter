@@ -15,32 +15,30 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"format": "prettier --write . --ignore-unknown",
-		"format:check": "prettier --check . --ignore-unknown",
+		"check": "biome check .",
+		"format": "biome format --write .",
+		"format:check": "biome format .",
 		"start": "next start",
-		"lint": "eslint",
-		"type-check": "tsc --noEmit"
+		"lint": "biome lint .",
+		"type-check": "tsgo --noEmit"
 	},
 	"dependencies": {
-		"@tuturuuu/ui": "^0.6.2",
+		"@tuturuuu/ui": "^0.19.1",
 		"@vercel/analytics": "^2.0.1",
-		"next": "16.2.9",
+		"next": "16.2.10",
 		"react": "19.2.7",
 		"react-dom": "19.2.7",
-		"tuturuuu": "^0.10.0"
+		"tuturuuu": "^0.15.1"
 	},
 	"devDependencies": {
-		"@eslint/compat": "^2.1.0",
-		"@tailwindcss/postcss": "^4.3.1",
+		"@biomejs/biome": "^2.5.5",
+		"@tailwindcss/postcss": "^4.3.3",
 		"@tailwindcss/typography": "^0.5.20",
 		"@tuturuuu/typescript-config": "^0.1.1",
-		"@types/node": "^25.9.3",
+		"@types/node": "^26.1.1",
 		"@types/react": "^19.2.17",
 		"@types/react-dom": "^19.2.3",
-		"eslint": "^10.5.0",
-		"eslint-config-next": "16.2.9",
-		"prettier": "^3.8.4",
-		"tailwindcss": "^4.3.1",
-		"typescript": "^6.0.3"
+		"@typescript/native-preview": "^7.0.0-dev.20260707.2",
+		"tailwindcss": "^4.3.3"
 	}
 }
