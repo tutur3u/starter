@@ -20,25 +20,25 @@
 		"format:check": "biome format .",
 		"start": "next start",
 		"lint": "biome lint .",
-		"type-check": "tsgo --noEmit"
+		"type-check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@tuturuuu/ui": "^0.19.1",
+		"@tuturuuu/ui": "^0.29.0",
 		"@vercel/analytics": "^2.0.1",
-		"next": "16.2.10",
-		"react": "19.2.7",
-		"react-dom": "19.2.7",
-		"tuturuuu": "^0.15.1"
+		"next": "16.3.2",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"tuturuuu": "^0.20.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.5",
+		"@biomejs/biome": "^2.5.9",
 		"@tailwindcss/postcss": "^4.3.3",
 		"@tailwindcss/typography": "^0.5.20",
 		"@tuturuuu/typescript-config": "^0.1.1",
-		"@types/node": "^26.1.1",
-		"@types/react": "^19.2.17",
-		"@types/react-dom": "^19.2.3",
-		"@typescript/native-preview": "^7.0.0-dev.20260707.2",
-		"tailwindcss": "^4.3.3"
+		"@types/node": "^26.2.0",
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.4",
+		"tailwindcss": "^4.3.3",
+		"typescript": "^7.0.2"
 	}
 }
